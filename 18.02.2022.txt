@@ -1,0 +1,402 @@
+HOTFIX
+Problem resolved0
+////https://github.com/KirillovItstep/classworks/blob/main/new%201.txt////
+
+гк@PC12-CAB3 MINGW64 ~
+$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+гк@PC12-CAB3 MINGW64 ~
+$ git-- version
+bash: git--: command not found
+
+гк@PC12-CAB3 MINGW64 ~
+$ git --version
+git version 2.33.1.windows.1
+
+гк@PC12-CAB3 MINGW64 ~
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+гк@PC12-CAB3 MINGW64 ~
+$ git config --global user.name zhenyka9696
+
+гк@PC12-CAB3 MINGW64 ~
+$ git config --global user.name
+zhenyka9696
+
+гк@PC12-CAB3 MINGW64 ~
+$ git config --global user.email zhenyka9696@mail.ru
+
+гк@PC12-CAB3 MINGW64 ~
+$ git config --global user.email
+zhenyka9696@mail.ru
+
+гк@PC12-CAB3 MINGW64 ~
+$ pwd
+/c/Users/гк
+
+гк@PC12-CAB3 MINGW64 ~
+$ cd D:\гк\Github
+bash: cd: D:гкGithub: No such file or directory
+
+гк@PC12-CAB3 MINGW64 ~
+$ pwd
+/c/Users/гк
+
+гк@PC12-CAB3 MINGW64 ~
+$ cd D:/гк/Github
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github
+$ pwd
+/d/гк/Github
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github
+$ git init
+Initialized empty Git repository in D:/гк/Github/.git/
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git add .
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git commit -m "v.1.0"
+[master (root-commit) 8a496d6] v.1.0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 18.02.2022.txt
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git remote add origin https://github.com/zhenyka9696/0
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git remote add
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git ls-files
+18.02.2022.txt
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git commit -m "C0"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   18.02.2022.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git add 18.02.2022.txt
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git commit -m "C0"
+[master 3fa8e85] C0
+ 1 file changed, 1 insertion(+)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git log
+commit 3fa8e85f664ea632ea140ab13aba4afc658a06ee (HEAD -> master)
+Author: zhenyka9696 <zhenyka9696@mail.ru>
+Date:   Fri Feb 18 19:27:55 2022 +0300
+
+    C0
+
+commit 8a496d6c8ba8b3fa9397d4ee783f383f9bd7c2dc
+Author: zhenyka9696 <zhenyka9696@mail.ru>
+Date:   Fri Feb 18 18:58:40 2022 +0300
+
+    v.1.0
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git shortlog
+zhenyka9696 (2):
+      v.1.0
+      C0
+
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git add .
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git commit -m "c1"
+[master 728bbc2] c1
+ 1 file changed, 226 insertions(+), 1 deletion(-)
+ rewrite 18.02.2022.txt (100%)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git short log
+git: 'short' is not a git command. See 'git --help'.
+
+The most similar command is
+        shortlog
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git shortlog
+zhenyka9696 (3):
+      v.1.0
+      C0
+      c1
+
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git checkout -b iss1
+Switched to a new branch 'iss1'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git checout -b hotfix
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ git commit -m "hotfix"
+On branch hotfix
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   18.02.2022.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ git add .
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ git commit -m "hotfix"
+[hotfix 8ac7fac] hotfix
+ 1 file changed, 1 insertion(+), 226 deletions(-)
+ rewrite 18.02.2022.txt (100%)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (hotfix)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git merge hotfix
+Updating 728bbc2..8ac7fac
+Fast-forward
+ 18.02.2022.txt | 227 +--------------------------------------------------------
+ 1 file changed, 1 insertion(+), 226 deletions(-)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git branch -d hotfix
+error: The branch 'hotfix' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D hotfix'.
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git branch -d hotfix
+Deleted branch hotfix (was 8ac7fac).
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git checkout iss1
+Switched to branch 'iss1'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git commit -a -m "iss1"
+[iss1 567bf35] iss1
+ 1 file changed, 1 insertion(+), 226 deletions(-)
+ rewrite 18.02.2022.txt (100%)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ gitk
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git commit -a -m "iss1"
+On branch iss1
+nothing to commit, working tree clean
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git commit -a -m "iss1"
+[iss1 9ec00f7] iss1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (iss1)
+$ git checkout master
+Switched to branch 'master'
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ git merge iss1
+Auto-merging 18.02.2022.txt
+CONFLICT (content): Merge conflict in 18.02.2022.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   18.02.2022.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master|MERGING)
+$ cat 18.02.2022.txt
+<<<<<<< HEAD
+HOTFIX
+=======
+Problem resolved0
+>>>>>>> iss1
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master|MERGING)
+$ git commit -m "V2.0.0"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       18.02.2022.txt
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master|MERGING)
+$ git commit -a -m "v2.0.0"
+[master 4c1d59a] v2.0.0
+
+гк@PC12-CAB3 MINGW64 /d/гк/Github (master)
+$ gitk
+
